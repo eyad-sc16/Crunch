@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="src/images/crunch-logo.png">
+  </link>
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/header.css">
+  <link rel="stylesheet" href="src/css/main-style.css">
+  <link rel="stylesheet" href="src/css/animation.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+  <script type="module" src="src/js/controller.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">Crunch</div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li class="nav__link contact-link"><a href="">Contact</a></li>
+        <li class="nav__link footer-link"><a href="#footer">Footre </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-section">
+      <img class="icon icon-1" src="src/images/icon-1.png" alt="src/images/icon-1.png"><img class="icon icon-2"
+        src="src/images/icon-1.png" alt="src/images/icon-1.png"><img class="icon icon-5" src="src/images/icon-1.png"
+        alt=""><img class="icon icon-3" src="src/images/icon-1.png" alt=""><img class="icon icon-4"
+        src="src/images/icon-1.png" alt="">
+      <div class="display-window">
+        <!-- 
+        <div class="inner-display-window">
+          <div class="window-texts-side">
+            <h1 class="window-title">Crunch Your <span>PNG</span> Image</h1>
+            <div class="window-text">
+              <p>Click on any image to find the perfect option for your needs, and enjoy </p>
+              <p>a fully customized experience
+                tailored to your
+                next project</p>
+            </div>
+          </div>
+          <div class="animation-side">
+            
+            <div class="first-box animation-boxs">
+              <div><svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="50px" height="50px" viewBox="0 0 22 22"
+                  id="memory-image">
+                  <path
+                    d="M1 4H2V3H20V4H21V18H20V19H2V18H1V4M3 14H4V13H5V12H6V11H7V10H8V9H10V10H11V11H12V12H13V13H14V14H15V15H16V16H17V17H19V5H3V14M14 17V16H13V15H12V14H11V13H10V12H8V13H7V14H6V15H5V16H4V17H14M13 8H14V7H16V8H17V10H16V11H14V10H13V8Z" />
+                </svg></div>
+              <div class="target-image-name">
+                <span>PNG</span>
+              </div>
+
+            </div>
+            <span class="arrow-up window-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24" fill="none">
+                <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span class="arrow-down window-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24" fill="none">
+                <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            <div class="second-box animation-boxs">
+              <div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"
+                  height="50px" width="50px" version="1.1" id="Layer_1" viewBox="0 0 24 24" xml:space="preserve">
+                  <g>
+                    <path d="M11,6H7v1H6v4h1v1h4v-1h1V7h-1V6z M10,10H8V8h2V10z" />
+                    <path
+                      d="M21,3V2H3v1H2v18h1v1h18v-1h1V3H21z M20,14h-1v-1h-1v-1h-1v-1h-3v1h-1v1h-1v1h-1v1h-1v1H9v1H8v1H7v1H6v1H5v-1H4V5h1V4h14v1   h1V14z M20,19h-1v1H9v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v1h1v1h1v1h1v1h1V19z" />
+                  </g>
+                </svg></div>
+              <div class="target-image-name">
+                <span>PNG</span>
+              </div>
+            </div>
+          </div>
+        </div>-->
+      </div>
+      <div class="convert-space">
+        <!-- <div class="convert-box" data-oreder="">
+          <div class="convert-content">
+            <div class="image-info-side">
+              <div class="image">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="40px" height="40px" viewBox="0 0 24 24">
+                  <g id="Image_Off">
+                    <path
+                      d="M19.937,14.218l0,-8.654c0,-0.829 -0.672,-1.5 -1.5,-1.5l-10.628,-0c-0.276,-0 -0.5,-0.225 -0.5,-0.5c0,-0.276 0.224,-0.5 0.5,-0.5l10.628,-0c1.38,-0 2.5,1.118 2.5,2.5l0,10.624c0,0.276 -0.224,0.5 -0.5,0.501c-0.276,-0 -0.5,-0.225 -0.5,-0.5l0,-0.556l-4.583,-4.584c-0.456,-0.456 0.251,-1.163 0.707,-0.707c0.162,0.162 2.37,2.37 3.876,3.876Zm-0.121,6.304c-0.395,0.262 -0.869,0.415 -1.379,0.415l-12.874,-0c-1.381,-0 -2.5,-1.119 -2.5,-2.5l0,-12.873c0,-0.51 0.153,-0.984 0.414,-1.38l-0.263,-0.263c-0.456,-0.456 0.251,-1.163 0.707,-0.707c0.088,0.088 0.176,0.176 0.263,0.263c0.245,0.245 16.095,16.094 16.339,16.338l0.263,0.263c0.455,0.456 -0.252,1.163 -0.707,0.707c-0.088,-0.087 -0.175,-0.175 -0.263,-0.263Zm-11.104,-11.103l-2.001,-2.001c-0.094,0.196 -0.146,0.415 -0.146,0.647c-0,0.829 0.672,1.5 1.5,1.5c0.232,-0 0.451,-0.052 0.647,-0.146Zm-2.733,-2.733l-1.77,-1.77c-0.093,0.196 -0.146,0.416 -0.146,0.648l0,10.717l1.926,-1.926c0.587,-0.586 1.536,-0.586 2.122,-0l0.555,0.554c0.195,0.196 0.511,0.196 0.706,0l2.415,-2.415l-2.343,-2.343c-0.395,0.262 -0.869,0.414 -1.379,0.414c-1.38,-0 -2.5,-1.119 -2.5,-2.5c-0,-0.509 0.152,-0.983 0.414,-1.379Zm-1.916,11.009l0,0.741c0,0.829 0.671,1.5 1.5,1.5l12.874,0c0.232,0 0.451,-0.052 0.647,-0.145c-0.165,-0.165 -3.264,-3.263 -6.59,-6.59l-2.414,2.415c-0.585,0.586 -1.537,0.586 -2.122,0l-0.554,-0.554c-0.195,-0.196 -0.512,-0.196 -0.708,0l-2.633,2.633Z" />
+                  </g>
+                </svg>
+              </div>
+              <div class="image-text-info">
+                <div class="image-name">
+                  <h3>image/png</h3>
+                </div>
+                <div class="image-inner-info">
+                  <p>1.1mp . PNG Image</p>
+                </div>
+              </div>
+            </div>
+            <div class="image-options-side">
+              <div class="crunch-text-box">
+                <div class="convert-sighn"><svg xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Uploaded to svgrepo.com" width="30px"
+                    height="30px" viewBox="0 0 32 32" xml:space="preserve">
+
+                    <path class="puchipuchi_een"
+                      d="M31,10c0,2.209-1.791,4-4,4c-1.105,0-2.105-0.448-2.828-1.172L19,18l-1-1v-3h-3l-1-1l5.172-5.172  C18.448,7.105,18,6.105,18,5c0-2.209,1.791-4,4-4s4,1.791,4,4c0,0.423-0.083,0.823-0.205,1.205C26.177,6.083,26.577,6,27,6  C29.209,6,31,7.791,31,10z M17,18v-3h-3l-1-1l-5.172,5.172C7.105,18.448,6.105,18,5,18c-2.209,0-4,1.791-4,4c0,2.209,1.791,4,4,4  c0.423,0,0.823-0.083,1.205-0.205C6.083,26.177,6,26.577,6,27c0,2.209,1.791,4,4,4s4-1.791,4-4c0-1.105-0.448-2.105-1.172-2.828  L18,19L17,18z" />
+                  </svg></div>
+                <span>Crunch</span>
+              </div>
+              <div class="image-name-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" id="image"
+                  data-name="multi color" class="icon multi-color">
+                  <polygon id="tertiary-fill" points="3.29 19.71 9 14 11 16 14 13 20.71 19.71 3.29 19.71"
+                    style="fill: #b7b7b7; stroke-width: 2;" />
+                  <path id="primary-stroke"
+                    d="M20,20H4a1,1,0,0,1-1-1V5A1,1,0,0,1,4,4H20a1,1,0,0,1,1,1V19A1,1,0,0,1,20,20Zm.71-.29L14,13l-3,3L9,14,3.29,19.71Z"
+                    style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;" />
+                  <circle id="secondary-fill" cx="11" cy="9" r="1"
+                    style="fill: rgb(44, 169, 188); stroke: rgb(246, 146, 30); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;" />
+                </svg>
+                <p>PNG</p>
+                <svg class="right-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="30px" height="30px" viewBox="0 0 24 24">
+                  <defs>
+                    <path id="right-a"
+                      d="M2.29289322,0.292893219 C2.68341751,-0.0976310729 3.31658249,-0.0976310729 3.70710678,0.292893219 C4.09763107,0.683417511 4.09763107,1.31658249 3.70710678,1.70710678 L1.70710678,3.70710678 C1.31658249,4.09763107 0.683417511,4.09763107 0.292893219,3.70710678 C-0.0976310729,3.31658249 -0.0976310729,2.68341751 0.292893219,2.29289322 L2.29289322,0.292893219 Z" />
+                    <path id="right-c"
+                      d="M3.41421356,4 L13.0014708,4 C13.5529433,4 14,4.44771525 14,5 C14,5.55228475 13.5529433,6 13.0014708,6 L3.41421356,6 L5.70710678,8.29289322 C6.09763107,8.68341751 6.09763107,9.31658249 5.70710678,9.70710678 C5.31658249,10.0976311 4.68341751,10.0976311 4.29289322,9.70710678 L0.292893219,5.70710678 C-0.0976310729,5.31658249 -0.0976310729,4.68341751 0.292893219,4.29289322 L4.29289322,0.292893219 C4.68341751,-0.0976310729 5.31658249,-0.0976310729 5.70710678,0.292893219 C6.09763107,0.683417511 6.09763107,1.31658249 5.70710678,1.70710678 L3.41421356,4 Z" />
+                  </defs>
+                  <g fill="none" fill-rule="evenodd" transform="matrix(-1 0 0 1 19 7)">
+                    <g transform="translate(3 1)">
+                      <mask id="right-b" fill="#ffffff">
+                        <use xlink:href="#right-a" />
+                      </mask>
+                      <use fill="#D8D8D8" fill-rule="nonzero" xlink:href="#right-a" />
+                      <g fill="#FFA0A0" mask="url(#right-b)">
+                        <rect width="24" height="24" transform="translate(-8 -8)" />
+                      </g>
+                    </g>
+                    <mask id="right-d" fill="#ffffff">
+                      <use xlink:href="#right-c" />
+                    </mask>
+                    <use fill="#000000" fill-rule="nonzero" xlink:href="#right-c" />
+                    <g fill="#7600FF" mask="url(#right-d)">
+                      <rect width="24" height="24" transform="translate(-5 -7)" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <select class="format-btn">
+                <option value="" disabled selected hidden>Select Formate</option>
+                <option value="jpeg">jpeg</option>
+                <option value="png">png</option>
+                <option value="avif">avif</option>
+                <option value="jxl">jxl</option>
+                <option value="qoi">qoi</option>
+                <option value="oxipng">oxipng</option>
+                <option value="resize">resize</option>
+              </select>
+
+              <button class="close-btn">X</button>
+
+            </div> -->
+        <!--
+        <div class="converted-image-info-box">
+          <div class="converted-info-content">
+            <div class="image-info-side">
+              <div class="image">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="40px" height="40px" viewBox="0 0 24 24">
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-1.96-2.36L6.5 17h11l-3.54-4.71z" />
+                </svg>
+              </div>
+              <div class="image-text-info">
+                <div class="image-name">
+                  <h3>image-name.png</h3>
+                </div>
+                <div class="image-inner-info">
+                  <p>1.2 MB &rarr; <span>0.4 MB</span> (-66%) . WEBP Image</p>
+                </div>
+              </div>
+            </div>
+            <div class="download-side">
+              <a class="download-link" href="#" download>Download Image</a>
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
+      <!-- <div class="download-box">
+
+            <p>✅ Your Image Ready To Download</p>
+            <a class="download-link" href="src/images/Flow-chart-1.png" download="src/images/Flow-chart-1.png">Download
+              Image</a>
+          </div> -->
+
+      </div>
+      <!-- <div class="loading-box">
+            <p>Crunching...</p>
+            <div class="loading-bar"></div>
+          </div>
+        </div> -->
+      </div>
+
+      <form class="file-form">
+        <input class="file-input" type="file">
+      </form>
+      <div class="add-more-box">
+        <!-- <div class="inner-add-more-box">
+          <div class="nums-of-images">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 1024 1024" class="icon"
+                version="1.1">
+                <path
+                  d="M910.3 277H662.8c0-0.1 0.1-0.2 0.1-0.4H277.3c-0.1 0.1-0.3 0.2-0.4 0.4H174c-27.4 0-49.7 22.3-49.7 49.7V823c0 27.4 22.3 49.7 49.7 49.7h22.8c-3.6 2.4-6 6.6-6 11.3 0 7.5 6.1 13.6 13.6 13.6h674.2c7.5 0 13.6-6.1 13.6-13.6 0-4.7-2.4-8.8-6-11.3h24.2c27.3 0 49.7-22.4 49.7-49.7V326.7c-0.1-27.5-22.4-49.7-49.8-49.7z"
+                  fill="#A7B8C6" />
+                <path
+                  d="M276.7 663.6c-3.5 0-7-1.3-9.6-4-5.3-5.3-5.3-13.9 0-19.2l476.7-476.7c5.3-5.3 13.9-5.3 19.2 0 5.3 5.3 5.3 13.9 0 19.2L286.3 659.6c-2.7 2.7-6.2 4-9.6 4z"
+                  fill="#A7B8C6" />
+                <path
+                  d="M753.4 663.6c-3.5 0-7-1.3-9.6-4L267.1 182.8c-5.3-5.3-5.3-13.9 0-19.2s13.9-5.3 19.2 0L763 640.4c5.3 5.3 5.3 13.9 0 19.2-2.7 2.7-6.1 4-9.6 4z"
+                  fill="#A7B8C6" />
+                <path
+                  d="M243.5 630.5c-3.5 0-7-1.3-9.6-4-5.3-5.3-5.3-13.9 0-19.2l476.7-476.7c5.3-5.3 13.9-5.3 19.2 0 5.3 5.3 5.3 13.9 0 19.2L253.1 626.5c-2.7 2.7-6.2 4-9.6 4z"
+                  fill="#3E3A39" />
+                <path
+                  d="M720.3 630.5c-3.5 0-7-1.3-9.6-4L234 149.7c-5.3-5.3-5.3-13.9 0-19.2 5.3-5.3 13.9-5.3 19.2 0l476.7 476.7c5.3 5.3 5.3 13.9 0 19.2-2.7 2.8-6.1 4.1-9.6 4.1z"
+                  fill="#3E3A39" />
+                <path
+                  d="M845.3 804.8H131.5c-19.9 0-36.1-16.3-36.1-36.1V272.5c0-19.9 16.3-36.1 36.1-36.1h713.9c19.9 0 36.1 16.3 36.1 36.1v496.2c0 19.8-16.3 36.1-36.2 36.1z"
+                  fill="#998D7B" />
+                <path
+                  d="M845.3 812.3H131.5c-24.1 0-43.7-19.6-43.7-43.7V272.5c0-24.1 19.6-43.7 43.7-43.7h713.9c24.1 0 43.7 19.6 43.7 43.7v496.2c-0.2 24-19.7 43.6-43.8 43.6zM131.5 243.8c-15.8 0-28.6 12.9-28.6 28.6v496.2c0 15.8 12.9 28.6 28.6 28.6h713.9c15.8 0 28.6-12.9 28.6-28.6V272.5c0-15.8-12.9-28.6-28.6-28.6H131.5z"
+                  fill="#C8BB9B" />
+                <path
+                  d="M850 818.4H113.7c-27.4 0-49.7-22.3-49.7-49.7V272.5c0-27.4 22.3-49.7 49.7-49.7H850c27.4 0 49.7 22.3 49.7 49.7v496.2c0 27.3-22.2 49.7-49.7 49.7zM113.7 249.8c-12.5 0-22.6 10.2-22.6 22.6v496.2c0 12.5 10.2 22.6 22.6 22.6H850c12.5 0 22.6-10.2 22.6-22.6V272.5c0-12.5-10.2-22.6-22.6-22.6l-736.3-0.1z"
+                  fill="#3E3A39" />
+                <path
+                  d="M579.4 753.4H139.7c-19.9 0-36.1-16.3-36.1-36.1V329.7c0-19.9 16.3-36.1 36.1-36.1h439.6c19.9 0 36.1 16.3 36.1 36.1v387.6c0.1 19.8-16.2 36.1-36 36.1z"
+                  fill="#98805F" />
+                <path
+                  d="M574.6 718.6H148.9c-6.6 0-12-5.4-12-12V334.4c0-6.6 5.4-12 12-12h425.5c6.6 0 12 5.4 12 12v372.2c0.2 6.6-5.2 12-11.8 12z"
+                  fill="#B9CCD9" />
+                <path d="M160.4 718.6c75.4-44.4 160.3-113.5 241-200.1 61.2-65.7 112.1-133.1 150.1-196H137v396.1h23.4z"
+                  fill="#DADDEE" />
+                <path
+                  d="M422.8 294.5H146.1c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5h276.6c2.5 0 4.5 2 4.5 4.5s-1.9 4.5-4.4 4.5zM572.9 756.2h-218c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5h218c2.5 0 4.5 2 4.5 4.5 0.1 2.4-2 4.5-4.5 4.5z"
+                  fill="#D8D8D8" />
+                <path
+                  d="M313.9 386.4C254.5 444.1 195.2 501.9 137 547.1v22.3c59.5-45 120.2-103.6 180.8-162.5 29.5-28.7 59-57.4 88.4-84.5h-25.6c-22.2 20.9-44.5 42.5-66.7 64zM380.6 322.5h25.6"
+                  fill="#E8EAF5" />
+                <path
+                  d="M818.3 843.1H144c-7.5 0-13.6-6.1-13.6-13.6s6.1-13.6 13.6-13.6h674.2c7.5 0 13.6 6.1 13.6 13.6 0.1 7.6-6 13.6-13.5 13.6z"
+                  fill="#3E3A39" />
+                <path d="M759.8 393.3m-58.1 0a58.1 58.1 0 1 0 116.2 0 58.1 58.1 0 1 0-116.2 0Z" fill="#98805F" />
+                <path
+                  d="M544.6 710.7H221.2c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5h323.5c2.5 0 4.5 2 4.5 4.5-0.1 2.4-2.1 4.5-4.6 4.5z"
+                  fill="#D8D8D8" />
+                <path d="M759.8 393.3m-47.9 0a47.9 47.9 0 1 0 95.8 0 47.9 47.9 0 1 0-95.8 0Z" fill="#E1D8CC" />
+                <path
+                  d="M772.8 400.9h-25.9c-4.2 0-7.5-3.4-7.5-7.5 0-4.2 3.4-7.5 7.5-7.5h25.9c4.2 0 7.5 3.4 7.5 7.5s-3.4 7.5-7.5 7.5z"
+                  fill="#40210F" />
+                <path d="M759.8 549.4m-58.1 0a58.1 58.1 0 1 0 116.2 0 58.1 58.1 0 1 0-116.2 0Z" fill="#98805F" />
+                <path d="M759.8 549.4m-47.9 0a47.9 47.9 0 1 0 95.8 0 47.9 47.9 0 1 0-95.8 0Z" fill="#E1D8CC" />
+                <path
+                  d="M759.8 570c-4.2 0-7.5-3.4-7.5-7.5v-25.9c0-4.2 3.4-7.5 7.5-7.5s7.5 3.4 7.5 7.5v25.9c0 4.1-3.4 7.5-7.5 7.5z"
+                  fill="#40210F" />
+                <path
+                  d="M732.3 746.3h-29c-2.1 0-3.8-1.7-3.8-3.8v-10.2c0-2.1 1.7-3.8 3.8-3.8h29c2.1 0 3.8 1.7 3.8 3.8v10.2c0 2.1-1.7 3.8-3.8 3.8zM774.9 746.3h-29c-2.1 0-3.8-1.7-3.8-3.8v-10.2c0-2.1 1.7-3.8 3.8-3.8h29c2.1 0 3.8 1.7 3.8 3.8v10.2c0 2.1-1.7 3.8-3.8 3.8zM817.5 746.3h-29c-2.1 0-3.8-1.7-3.8-3.8v-10.2c0-2.1 1.7-3.8 3.8-3.8h29c2.1 0 3.8 1.7 3.8 3.8v10.2c0 2.1-1.7 3.8-3.8 3.8z"
+                  fill="#E1D8CC" />
+                <path
+                  d="M732.3 721.6h-29c-2.1 0-3.8-1.7-3.8-3.8v-10.2c0-2.1 1.7-3.8 3.8-3.8h29c2.1 0 3.8 1.7 3.8 3.8v10.2c0 2.1-1.7 3.8-3.8 3.8zM774.9 721.6h-29c-2.1 0-3.8-1.7-3.8-3.8v-10.2c0-2.1 1.7-3.8 3.8-3.8h29c2.1 0 3.8 1.7 3.8 3.8v10.2c0 2.1-1.7 3.8-3.8 3.8zM817.5 721.6h-29c-2.1 0-3.8-1.7-3.8-3.8v-10.2c0-2.1 1.7-3.8 3.8-3.8h29c2.1 0 3.8 1.7 3.8 3.8v10.2c0 2.1-1.7 3.8-3.8 3.8z"
+                  fill="#E1D8CC" />
+              </svg>
+            </div>
+            <h3><span>4</span> Images Ready to Crunch</h3>
+          </div>
+          <div class="add-more-controle-box">
+            <div>
+              <label class="add-file-input-label" for="add-more-input">Add More Images</label>
+            </div>
+            <input type="file" id="add-more-input" style="display: none;">
+            <button class="convert-btn">Crunch ☢</button>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- Converted Image Info Markup (Template for after conversion) -->
+      <!-- 
+      <div class="converted-image-info-box">
+        <div class="converted-info-content">
+          <div class="image-info-side">
+            <div class="image">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="40px" height="40px" viewBox="0 0 24 24">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-1.96-2.36L6.5 17h11l-3.54-4.71z"/>
+              </svg>
+            </div>
+            <div class="image-text-info">
+              <div class="image-name">
+                <h3>image-name.png</h3>
+              </div>
+              <div class="image-inner-info">
+                <p>1.2 MB &rarr; <span>0.4 MB</span> (-66%) . WEBP Image</p>
+              </div>
+            </div>
+          </div>
+          <div class="download-side">
+            <a class="download-link" href="#" download>Download Image</a>
+          </div>
+        </div>
+      </div>
+      -->
+
+    </section>
+
+  </main>
+
+
+  <!-- out error message -->
+  <!-- <blockquote class="body-errror-message">
+    <h1>Only Images Accepted!, Please Try Anothor Image, Thats Kind Of Files Comming Soon!!!</h1>
+  </blockquote> -->
+
+  <a target="_blank"
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=eyadbudev01001@gmail.com.com&su=Report%20a%20Bug&body=Describe%20the%20issue%20here:%0D%0A%0D%0ABrowser/Device:%20"
+    class="Complaint-btn">
+    <p>Report a issue</p>
+    <div class="Complaint-btn-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 1024 1024" class="icon"
+        version="1.1">
+        <path
+          d="M627.2 775.68c1.28 16.64-8.96 30.72-23.04 32l-222.72-32c-15.36 1.28-28.16-10.24-30.72-25.6l23.04-149.76c-1.28-15.36 8.96-30.72 23.04-32L545.28 550.4c15.36-1.28 28.16 10.24 30.72 25.6l51.2 199.68z"
+          fill="#FAC546" />
+        <path
+          d="M604.16 820.48h-1.28l-221.44-32c-21.76 1.28-39.68-15.36-42.24-37.12v-3.84l23.04-148.48c-1.28-10.24 2.56-21.76 8.96-29.44 6.4-7.68 15.36-14.08 25.6-15.36L544 537.6c21.76-2.56 40.96 14.08 44.8 35.84l51.2 198.4v1.28c2.56 23.04-12.8 43.52-34.56 46.08l-1.28 1.28z m-224-57.6h1.28l221.44 32c6.4-1.28 11.52-8.96 11.52-16.64l-51.2-198.4v-1.28c-1.28-8.96-8.96-15.36-16.64-14.08l-148.48 17.92c-3.84 0-6.4 2.56-8.96 5.12-2.56 3.84-3.84 7.68-3.84 12.8v3.84l-23.04 147.2c1.28 7.68 8.96 14.08 16.64 12.8 0-1.28 1.28-1.28 1.28-1.28z"
+          fill="#231C1C" />
+        <path
+          d="M823.04 195.84L769.28 217.6l58.88 518.4 56.32 7.68c15.36-1.28 28.16-10.24 26.88-25.6l-58.88-496.64c0-16.64-14.08-28.16-29.44-25.6z"
+          fill="#6FB0BE" />
+        <path
+          d="M885.76 755.2h-1.28l-56.32-7.68c-6.4-1.28-10.24-5.12-11.52-11.52L757.76 217.6c-1.28-5.12 2.56-11.52 7.68-12.8l53.76-21.76c1.28 0 2.56-1.28 3.84-1.28 10.24-1.28 21.76 1.28 29.44 8.96 8.96 6.4 14.08 16.64 15.36 26.88l58.88 496.64c1.28 8.96-1.28 16.64-6.4 24.32-6.4 8.96-17.92 14.08-32 15.36-1.28 1.28-1.28 1.28-2.56 1.28z m-44.8-32l44.8 5.12c6.4-1.28 10.24-2.56 12.8-6.4 1.28-1.28 1.28-2.56 1.28-5.12l-58.88-496.64c0-3.84-2.56-7.68-5.12-10.24-2.56-2.56-6.4-3.84-8.96-3.84l-42.24 16.64 56.32 500.48z"
+          fill="#231C1C" />
+        <path
+          d="M170.24 455.68c-10.24 3.84-25.6 15.36-24.32 30.72l16.64 138.24c1.28 15.36 11.52 30.72 26.88 29.44l56.32 7.68L224 435.2l-53.76 20.48z"
+          fill="#6FB0BE" />
+        <path
+          d="M245.76 673.28h-1.28l-55.04-6.4c-21.76 1.28-37.12-19.2-39.68-39.68l-16.64-138.24c-2.56-23.04 17.92-39.68 32-44.8L217.6 422.4c3.84-1.28 7.68-1.28 11.52 1.28 3.84 2.56 5.12 5.12 6.4 10.24l23.04 226.56c0 3.84-1.28 7.68-3.84 10.24-2.56 1.28-5.12 2.56-8.96 2.56z m-56.32-32h1.28l40.96 5.12-19.2-193.28-37.12 15.36c-6.4 2.56-16.64 10.24-15.36 17.92l16.64 138.24c1.28 7.68 5.12 19.2 12.8 17.92-1.28-1.28 0-1.28 0-1.28z"
+          fill="#231C1C" />
+        <path d="M224 433.92l21.76 226.56 583.68 74.24-58.88-518.4z" fill="#E1E0A6" />
+        <path
+          d="M829.44 747.52h-1.28l-583.68-74.24c-6.4-1.28-10.24-5.12-11.52-11.52L211.2 435.2c0-5.12 2.56-11.52 7.68-12.8l546.56-217.6c3.84-1.28 7.68-1.28 11.52 1.28 3.84 2.56 5.12 5.12 6.4 8.96l58.88 518.4c0 3.84-1.28 7.68-3.84 10.24-2.56 2.56-5.12 3.84-8.96 3.84z m-570.88-98.56l556.8 70.4-56.32-485.12-522.24 207.36 21.76 207.36z"
+          fill="#231C1C" />
+      </svg>
+    </div>
+  </a>
+  <footer class="footer" id="footer"></footer>
+
+</body>
+
+</html>
