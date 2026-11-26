@@ -40,7 +40,6 @@ header {
   }
 
   .logo:hover {
-    transform: translateX(0.2rem);
     transform: translateY(-0.2rem);
     box-shadow: 0.3rem 0.4rem var(--color-primary);
   }
@@ -50,7 +49,6 @@ header {
   .nav {
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100%;
     justify-content: right;
@@ -72,14 +70,6 @@ header {
         text-align: center;
         border: 0.1rem solid var(--color-border);
         transition: all 0.1s ease-in-out;
-      }
-
-      .nav__link:hover {
-        transform: translateY(-0.35rem);
-        box-shadow: 0rem 0.35rem var(--color-surface-deep);
-        border-color: var(--color-primary-hover);
-        background-color: var(--color-text);
-        border-radius: 0 0rem 0.3rem 0.3rem;
       }
 
       .nav__link:hover {

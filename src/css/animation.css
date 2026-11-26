@@ -1,18 +1,3 @@
-@keyframes up-down {
-  0% {
-    transform: scale(0.96);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(0.96);
-
-  }
-}
-
 @keyframes go-to-right {
   0% {
     transform: translateX(1rem);
@@ -85,10 +70,6 @@
   }
 }
 
-.file-input::file-selector-button {
-  animation: up-down 1.6s infinite;
-}
-
 .animation-boxs {
   animation: shadow-spreed 1.1s infinite linear;
 }
@@ -120,4 +101,8 @@
 
 .body-error-message {
   animation: fade-up 0.25s linear;
+}
+
+.file-form {
+  animation: shadow-spreed 0.8s infinite ease-in-out;
 }

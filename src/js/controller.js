@@ -73,7 +73,6 @@ const controleRemoveImage = function (e) {
 // selectin formate function
 const conteroleSelectingFormate = function (e) {
   model.selectingFormateHandling(e);
-  console.log(model.state.imagesArray);
 };
 
 // the init function

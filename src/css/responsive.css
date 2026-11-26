@@ -30,36 +30,6 @@
     gap: clamp(2rem, 8vw, 6rem);
     padding-inline: clamp(2rem, 6vw, 3rem);
   }
-
-  .hero-section>.icon-1 {
-    top: 6rem;
-    left: 0.75rem;
-    width: clamp(2.5rem, 7vw, 4.5rem);
-  }
-
-  .hero-section>.icon-2 {
-    top: 6rem;
-    right: 0.75rem;
-    width: clamp(3rem, 9vw, 5.5rem);
-  }
-
-  .hero-section>.icon-3 {
-    top: clamp(13rem, 30vh, 19rem);
-    right: 0.5rem;
-    width: clamp(2.25rem, 6vw, 3.5rem);
-  }
-
-  .hero-section>.icon-4 {
-    top: clamp(13rem, 30vh, 19rem);
-    left: 0.5rem;
-    width: clamp(2.5rem, 7vw, 4rem);
-  }
-
-  .hero-section>.icon-5 {
-    bottom: 6.5rem;
-    left: clamp(4rem, 12vw, 7rem);
-    width: clamp(4rem, 11vw, 6.5rem);
-  }
 }
 
 @media screen and (max-width: 900px) {
@@ -208,37 +178,6 @@
     display: none;
   }
 
-  .hero-section>.icon-1 {
-    top: 5rem;
-    left: 0.5rem;
-    width: clamp(2rem, 10vw, 3.25rem);
-  }
-
-  .hero-section>.icon-2 {
-    top: 5rem;
-    right: 0.5rem;
-    width: clamp(2.5rem, 12vw, 3.75rem);
-  }
-
-  .hero-section>.icon-3 {
-    top: 14rem;
-    right: 0.5rem;
-    width: clamp(2rem, 8vw, 2.75rem);
-  }
-
-  .hero-section>.icon-4 {
-    top: 14rem;
-    left: 0.5rem;
-    width: clamp(2.25rem, 9vw, 3rem);
-  }
-
-  .hero-section>.icon-5 {
-    right: 0.75rem;
-    bottom: 7.5rem;
-    left: auto;
-    width: clamp(3rem, 14vw, 4rem);
-  }
-
   .hero-section .convert-space {
     padding: 1rem 0.75rem;
     gap: 1rem;
@@ -381,19 +320,6 @@
 
   .file-form {
     padding: 1rem 0.75rem 1.5rem;
-  }
-
-  .file-input {
-    height: auto;
-    min-height: 3rem;
-    max-width: 100%;
-    font-size: 0.9rem;
-  }
-
-  .file-input::file-selector-button {
-    width: clamp(8rem, 40vw, 10rem);
-    padding: 0.65rem 0.4rem;
-    letter-spacing: 0.08em;
   }
 
   .body-error-message {

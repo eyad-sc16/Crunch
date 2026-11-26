@@ -1,6 +1,4 @@
-import { mark } from "regenerator-runtime";
 import View from "./view";
-import * as config from '../config.js'
 class ConvertBoxView extends View {
   _parentElement = document.querySelector('.convert-space');
   _erroMessage = 'Please seclect formate to contanue!'
@@ -8,15 +6,6 @@ class ConvertBoxView extends View {
   _renderMarkup() {
     this._clear()
     this._imageArray.forEach((img, i) => {
-      const renderSpaceMarkup = img.convertedImgObj
-        ? `
-        <div class="download-box">
-          <p>✅ Your Image Ready To Download</p>
-          <a class="download-link" href="${img.convertedImgObj.imgUrl}" download="${(img.name.split('.')[0]) + '.' + img.convertedImgObj.newType}">Download Image</a>
-        </div>
-      `
-        : '';
-
       const markup = `
         <div class="convert-box" data-order="${i}">
           <div class="convert-content">
@@ -103,7 +92,6 @@ class ConvertBoxView extends View {
             </div>
           </div>
           <div class="render-space">
-            ${renderSpaceMarkup}
           </div>
         </div>
     `
@@ -176,9 +164,6 @@ class ConvertBoxView extends View {
       if (renderSpace) {
         this._clear(renderSpace)
         renderSpace.insertAdjacentHTML('afterbegin', markup);
-        setTimeout(() => {
-
-        }, config.TIMER_TIME * 1000)
       }
     }
   }

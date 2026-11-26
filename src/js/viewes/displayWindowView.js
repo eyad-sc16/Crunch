@@ -2,6 +2,7 @@ import View from "./view"
 import * as config from '../config'
 class DisplayWindow extends View {
   _parentElement = document.querySelector('.display-window')
+  _currentTimer = null
 
   _renderMarkup() {
     const markup =
@@ -60,18 +61,14 @@ class DisplayWindow extends View {
   }
 
   _randomRender() {
+    if (this._currentTimer) clearInterval(this._currentTimer);
+
     const typeText = document.querySelector('.target-image-name2');
     if (typeText) {
       const spanEle = typeText.querySelector('span');
-
-      let currentTimer
-      if (currentTimer) {
-        clearInterval(currentTimer);
-      }
-
       let currentIndex = 0;
 
-      currentTimer = setInterval(() => {
+      this._currentTimer = setInterval(() => {
         if (config.TYPES_ARRAY.length === 0) return;
         spanEle.textContent = (config.TYPES_ARRAY[currentIndex]).toUpperCase();
         currentIndex = (currentIndex + 1) % config.TYPES_ARRAY.length;

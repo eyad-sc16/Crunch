@@ -1,4 +1,3 @@
-import { mark } from "regenerator-runtime"
 import View from "./view";
 class AddMoreView extends View {
   _parentElement = document.querySelector('.add-more-box');
