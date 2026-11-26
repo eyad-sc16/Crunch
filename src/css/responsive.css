@@ -232,6 +232,12 @@
     height: 1.5rem;
   }
 
+  .hero-section .convert-space .convert-box .image-name-box {
+    width: 100%;
+    gap: 0.5rem;
+    padding-inline: 0;
+  }
+
   .hero-section .convert-space .convert-box .image-name-box .right-arrow {
     display: none;
   }
@@ -272,8 +278,13 @@
 
   .add-more-box .inner-add-more-box .nums-of-images {
     width: 100%;
-    gap: 0.6rem;
+    min-width: 0;
+    gap: 0.5rem;
     font-size: 0.9rem;
+  }
+
+  .add-more-box .inner-add-more-box .nums-of-images .h3 {
+    overflow-wrap: anywhere;
   }
 
   .add-more-box .inner-add-more-box .nums-of-images .icon svg {
