@@ -55,53 +55,35 @@ export default class View {
 
   _movingImages() {
     const images = document.querySelectorAll('.icon');
+    if (!images.length) return;
 
-    // نقرأ المكان الأساسي لكل صورة من الـ CSS بتاعها مباشرة
+    // نقرأ المكان الأساسي لكل صورة من الـ CSS مباشرة
     const baseTransforms = Array.from(images).map(img => {
       const matrix = new DOMMatrix(window.getComputedStyle(img).transform);
       return { x: matrix.m41, y: matrix.m42 };
     });
 
-    let lastX = null;
-    let lasty = null;
+    // معاملات السرعة والحركة (Parallax factors) لكل صورة لتعطي حركة سلسة واحترافية
+    const factors = [
+      { fx: 0.05, fy: 0.04 },
+      { fx: -0.08, fy: 0.07 },
+      { fx: 0.03, fy: -0.06 },
+      { fx: -0.06, fy: -0.05 },
+      { fx: 0.07, fy: 0.08 }
+    ];
 
-    window.addEventListener('mousemove', function (e) {
-      const currentX = e.clientX;
-      const currenty = e.clientY;
+    window.addEventListener('mousemove', (e) => {
+      const { innerWidth, innerHeight } = window;
+      const mouseX = (e.clientX / innerWidth) - 0.5;
+      const mouseY = (e.clientY / innerHeight) - 0.5;
 
-      if (lastX === null || lasty === null) {
-        lastX = currentX;
-        lasty = currenty;
-        return;
-      }
-
-      let offsetX = 0;
-      let offsetY = 0;
-
-      if (currentX > lastX) {
-        offsetX = 4;
-      } else if (currentX < lastX) {
-        offsetX = -4;
-      }
-
-      if (currenty < lasty) {
-        offsetY = -4;
-      } else if (currenty > lasty) {
-        offsetY = 4;
-      }
-
-      // تطبيق حيز مختلف (موجب وسالب) لكل صورة حول مكانها الأصلي بوضوح
-
-      images[0].style.transform = `translate(${baseTransforms[0].x + offsetX}px, ${baseTransforms[0].y + offsetY}px)`;
-      images[1].style.transform = `translate(${baseTransforms[1].x - offsetX}px, ${baseTransforms[1].y + (offsetY * 1.7)}px)`;
-      images[2].style.transform = `translate(${baseTransforms[2].x + offsetX}px, ${baseTransforms[2].y - offsetY}px)`;
-      images[3].style.transform = `translate(${baseTransforms[3].x - offsetX}px, ${baseTransforms[3].y - (offsetY * 1.5)}px)`;
-      images[4].style.transform = `translate(${baseTransforms[4].x + offsetX}px, ${baseTransforms[4].y + (offsetY * 1.9)}px)`;
-
-
-      lastX = currentX;
-      lasty = currenty;
+      images.forEach((img, index) => {
+        if (!baseTransforms[index]) return;
+        const factor = factors[index % factors.length];
+        const x = baseTransforms[index].x + (mouseX * 120 * factor.fx);
+        const y = baseTransforms[index].y + (mouseY * 120 * factor.fy);
+        img.style.transform = `translate(${x}px, ${y}px)`;
+      });
     });
-
   }
 }
