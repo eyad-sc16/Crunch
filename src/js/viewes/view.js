@@ -24,13 +24,19 @@ export default class View {
 
     header.remove()
     footer.remove()
-    this._fileInput.remove()
+    const fileForm = this._fileInput.closest('.file-form');
+    if (fileForm) fileForm.remove();
   }
 
 
   eventHandler(handler) {
-    this._fileInput.addEventListener('change', function (e) {
-      e.preventDefault()
+    const filePickerButton = this._fileInput
+      .closest('.file-form')
+      .querySelector('.file-picker-button');
+
+    this._fileInput.addEventListener('change', (e) => {
+      const selectedFile = this._fileInput.files[0];
+      filePickerButton.textContent = selectedFile ? selectedFile.name : 'Choose image';
       handler(e)
     })
   }
@@ -63,13 +69,12 @@ export default class View {
       return { x: matrix.m41, y: matrix.m42 };
     });
 
-    // معاملات السرعة والحركة (Parallax factors) لكل صورة لتعطي حركة سلسة واحترافية
     const factors = [
-      { fx: 0.05, fy: 0.04 },
-      { fx: -0.08, fy: 0.07 },
-      { fx: 0.03, fy: -0.06 },
-      { fx: -0.06, fy: -0.05 },
-      { fx: 0.07, fy: 0.08 }
+      { fx: 0.08, fy: 0.07 },
+      { fx: -0.09, fy: 0.09 },
+      { fx: 0.05, fy: -0.08 },
+      { fx: -0.08, fy: -0.07 },
+      { fx: 0.09, fy: 0.09 }
     ];
 
     window.addEventListener('mousemove', (e) => {
@@ -86,4 +91,5 @@ export default class View {
       });
     });
   }
+
 }
