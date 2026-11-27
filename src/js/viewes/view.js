@@ -47,8 +47,8 @@ export default class View {
 
   _error(erroMessage = this._erroMessage, targetElement = undefined) {
     const markup = `
-      <blockquote class="body-error-message">
-        <h1>${erroMessage}</h1>
+      <blockquote class="body-error-message" role="alert">
+        <h2>${erroMessage}</h2>
       </blockquote>
     `
     const targetEle = targetElement ? this._body.querySelector(`.${targetElement}`) : this._body;

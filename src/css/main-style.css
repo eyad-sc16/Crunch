@@ -533,8 +533,9 @@
 }
 
 .file-input:focus-visible+.file-picker-button {
-  outline: 0.15rem solid var(--color-accent);
+  outline: 0.18rem solid var(--color-primary-dark);
   outline-offset: 0.2rem;
+  box-shadow: 0 0 0 0.28rem var(--color-lighting);
 }
 
 .Complaint-btn {

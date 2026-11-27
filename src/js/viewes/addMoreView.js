@@ -87,13 +87,13 @@ class AddMoreView extends View {
                     fill="#E1D8CC" />
                 </svg>
               </div>
-              <h3 class="h3"><span>${imagesNums}</span> ${imagesNums > 1 ? 'Images' : 'Image'} Ready to Crunch</h3>
+              <h3 class="h3" aria-live="polite"><span>${imagesNums}</span> ${imagesNums > 1 ? 'Images' : 'Image'} Ready to Crunch</h3>
             </div>
             <div class="add-more-controle-box">
               <div>
+                <input type="file" id="add-more-input" class="visually-hidden-input" multiple>
                 <label class="add-file-input-label" for="add-more-input">Add More Images</label>
               </div>
-              <input type="file" id="add-more-input" style="display: none;" multiple>
               <button class="convert-btn">Crunch ☢</button>
             </div>
           </div>

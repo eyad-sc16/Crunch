@@ -78,7 +78,7 @@ class ConvertBoxView extends View {
                   </g>
                 </svg>
               </div>
-              <select class="format-btn">
+              <select class="format-btn" aria-label="Output image format">
                 <option value="" disabled ${!img.imgFormate ? 'selected' : ''} hidden>Select Formate</option>
                 <option value="jpeg" ${img.imgFormate === 'jpeg' ? 'selected' : ''}>jpeg</option>
                 <option value="png" ${img.imgFormate === 'png' ? 'selected' : ''}>png</option>
@@ -88,7 +88,7 @@ class ConvertBoxView extends View {
                 <option value="webp" ${img.imgFormate === 'webp' ? 'selected' : ''}>webp</option>
                 <option value="oxipng" ${img.imgFormate === 'oxipng' ? 'selected' : ''}>oxipng</option>
               </select>
-              <button class="close-btn">X</button>
+              <button class="close-btn" aria-label="Remove image">X</button>
             </div>
           </div>
           <div class="render-space">
@@ -111,7 +111,7 @@ class ConvertBoxView extends View {
     if (!this._parentElement) return
     const markup = `
       <div class="loading-box">
-        <p>Crunching...</p>
+        <p role="status">Crunching...</p>
         <div class="loading-bar"></div>
       </div>
     `
@@ -128,7 +128,7 @@ class ConvertBoxView extends View {
     if (!this._parentElement) return
     const markup = `
       <div class="download-box">
-        <p>✅ Your Image Ready To Download</p>
+        <p role="status" aria-live="polite">✅ Your Image Ready To Download</p>
         <a class="download-link" href="${img.imgUrl}" download="${(img.name.split('.')[0]) + '.' + (img.name.split('.')[1] = img.newType)}">Download Image</a>
       </div>
     `

@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crunch-image</title>
-  <link rel="icon" href="./src/images/crunch-logo.png">
+  <meta name="description"
+    content="Compress images and convert PNG, JPEG, WebP, AVIF, and more with Crunch, a free online tool. Files are processed privately in your browser and never uploaded.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#D2B89D">
+  <link rel="canonical" href="https://crunch.surge.sh/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.transparenttextures.com">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+  <meta property="og:title" content="Crunch: Free Online Image Compressor and Converter">
+  <meta property="og:description"
+    content="Compress images and convert PNG, JPEG, WebP, AVIF, and more with Crunch, a free online tool. Files are processed privately in your browser and never uploaded.">
+  <meta property="og:image" content="https://crunch.surge.sh/og-image.png">
+  <meta property="og:image:alt" content="Crunch image compressor and converter">
+  <meta property="og:url" content="https://crunch.surge.sh/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Crunch: Free Online Image Compressor and Converter">
+  <meta name="twitter:description"
+    content="Compress images and convert PNG, JPEG, WebP, AVIF, and more with Crunch, a free online tool. Files are processed privately in your browser and never uploaded.">
+  <meta name="twitter:image" content="https://crunch.surge.sh/og-image.png">
+  <title>Crunch: Free Online Image Compressor and Converter</title>
   <link rel="stylesheet" href="./src/css/base.css">
   <link rel="stylesheet" href="./src/css/header.css">
   <link rel="stylesheet" href="./src/css/main-style.css">
@@ -13,24 +43,44 @@
   <link rel="stylesheet" href="./src/css/responsive.css">
   <link rel="stylesheet" href="./src/css/footer.css">
   <script type="module" src="./src/js/controller.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Crunch",
+      "url": "https://crunch.surge.sh/",
+      "description": "A free browser-based image compressor and converter. Image files are processed on the user's device.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript and WebAssembly support",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  </script>
 
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="header">
-    <div class="logo">Crunch</div>
-    <nav class="nav">
+    <h1 class="logo">Crunch</h1>
+    <nav class="nav" aria-label="Primary">
       <ul class="nav-links">
-        <li class="nav__link contact-link"><a href="">Contact</a></li>
+        <li class="nav__link contact-link"><a href="#footer">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="hero-section">
-      <img class="icon icon-1" src="./src/images/icon-2.png" alt="./src/images/icon-3.png"><img class="icon icon-2"
-        src="./src/images/icon-1.png" alt="./src/images/icon-2.png"><img class="icon icon-5"
-        src="./src/images/icon-1.png" alt=""><img class="icon icon-3" src="./src/images/icon-3.png" alt=""><img
-        class="icon icon-4" src="./src/images/icon-2.png" alt="">
+  <main id="main-content">
+    <section class="hero-section" aria-label="Image compressor and converter">
+      <img class="icon icon-1" src="./src/images/icon-2.png" width="677" height="369" alt="" loading="lazy"
+        decoding="async"><img class="icon icon-2" src="./src/images/icon-1.png" width="677" height="369" alt=""
+        loading="lazy" decoding="async"><img class="icon icon-5" src="./src/images/icon-1.png" width="677" height="369"
+        alt="" loading="lazy" decoding="async"><img class="icon icon-3" src="./src/images/icon-3.png" width="676"
+        height="369" alt="" loading="lazy" decoding="async"><img class="icon icon-4" src="./src/images/icon-2.png"
+        width="677" height="369" alt="" loading="lazy" decoding="async">
       <div class="display-window">
 
       </div>
@@ -50,11 +100,11 @@
 
   </main>
 
-  <a target="_blank"
+  <a target="_blank" rel="noopener noreferrer"
     href="https://mail.google.com/mail/?view=cm&fs=1&to=eyadbudev01001@gmail.com.com&su=Report%20a%20Bug&body=Describe%20the%20issue%20here:%0D%0A%0D%0ABrowser/Device:%20"
     class="Complaint-btn">
     <p>Report a issue</p>
-    <div class="Complaint-btn-icon">
+    <div class="Complaint-btn-icon" aria-hidden="true">
       <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 1024 1024" version="1.1">
         <path
           d="M627.2 775.68c1.28 16.64-8.96 30.72-23.04 32l-222.72-32c-15.36 1.28-28.16-10.24-30.72-25.6l23.04-149.76c-1.28-15.36 8.96-30.72 23.04-32L545.28 550.4c15.36-1.28 28.16 10.24 30.72 25.6l51.2 199.68z"
@@ -85,19 +135,22 @@
     <address class="inner-footer-container">
       <div class="accounts">
         <div class="account linkedin">
-          <a href=""><img class="account-icon" src="./src/images/linkedin.png" alt="Linkedin"></a>
+          <a href=""><img class="account-icon" src="./src/images/linkedin.png" width="32" height="32"
+              alt="LinkedIn" loading="lazy" decoding="async"></a>
 
           <span>Linkedin</span>
         </div>
         <div class="account github">
           <a href="">
-            <img class="account-icon" src="./src/images/github.png" alt="Githup">
+            <img class="account-icon" src="./src/images/github.png" width="32" height="32" alt="GitHub" loading="lazy"
+              decoding="async">
           </a>
 
           <span>Githup</span>
         </div>
         <div class="account protfolio">
-          <a href=""><img class="account-icon" src="./src/images/profile.png" alt="Profile"></a>
+          <a href=""><img class="account-icon" src="./src/images/profile.png" width="32" height="32" alt="Portfolio"
+              loading="lazy" decoding="async"></a>
 
           <span>Take a Lock To My Website!</span>
         </div>
