@@ -1,4 +1,5 @@
 import View from "./view";
+import * as helpers from '../helpers.js';
 class ConvertBoxView extends View {
   _parentElement = document.querySelector('.convert-space');
   _erroMessage = 'Please seclect formate to contanue!'
@@ -20,7 +21,7 @@ class ConvertBoxView extends View {
               </div>
               <div class="image-text-info">
                 <div class="image-name">
-                  <h3>${img.name}</h3>
+                  <h3>${helpers.escapeHTML(img.name)}</h3>
                 </div>
                 <div class="image-inner-info">
                   <p>${(img.size / (1024 * 1024)).toFixed(1)} MP . ${img.type.toUpperCase()} Image</p>
@@ -129,7 +130,7 @@ class ConvertBoxView extends View {
     const markup = `
       <div class="download-box">
         <p role="status" aria-live="polite">✅ Your Image Ready To Download</p>
-        <a class="download-link" href="${img.imgUrl}" download="${(img.name.split('.')[0]) + '.' + (img.name.split('.')[1] = img.newType)}">Download Image</a>
+        <a class="download-link" href="${img.imgUrl}" download="${helpers.escapeHTML((img.name.split('.')[0]) + '.' + (img.name.split('.')[1] = img.newType))}">Download Image</a>
       </div>
     `
     const box = this._parentElement.querySelector(`[data-order="${i}"]`);

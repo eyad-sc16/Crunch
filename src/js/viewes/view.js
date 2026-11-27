@@ -1,4 +1,5 @@
 import * as  config from '../config.js'
+import * as helpers from '../helpers.js'
 export default class View {
   _imageArray;
   _convertedImageArray;
@@ -48,7 +49,7 @@ export default class View {
   _error(erroMessage = this._erroMessage, targetElement = undefined) {
     const markup = `
       <blockquote class="body-error-message" role="alert">
-        <h2>${erroMessage}</h2>
+        <h2>${helpers.escapeHTML(erroMessage)}</h2>
       </blockquote>
     `
     const targetEle = targetElement ? this._body.querySelector(`.${targetElement}`) : this._body;
