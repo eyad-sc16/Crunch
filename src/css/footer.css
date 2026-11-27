@@ -1,0 +1,80 @@
+footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  min-height: 10rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--color-border);
+  border-top: 0.15rem dashed var(--color-primary-dark);
+  color: var(--color-lighting);
+  font-family: "Geist Pixel", sans-serif;
+  ;
+
+  .inner-footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: calc(1rem);
+  }
+
+  .accounts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(4rem);
+    position: relative;
+
+    .account {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-wrap: nowrap;
+      position: relative;
+      transition: transform 0.1s ease-in-out;
+    }
+
+    span {
+      position: absolute;
+      opacity: 0;
+      top: -2rem;
+      left: 50%;
+      width: max-content;
+      max-width: calc(100vw - 2rem);
+      text-align: center;
+      background-color: var(--color-text);
+      padding: 0.2rem 0.6rem;
+      border-radius: 0.3rem;
+      pointer-events: none;
+      transition: opacity 0.1s ease-in;
+      transform: translateX(-50%);
+      white-space: normal;
+    }
+
+    .account:first-child span {
+      left: 0;
+      transform: none;
+    }
+
+    .account:last-child span {
+      right: 0;
+      left: auto;
+      transform: none;
+    }
+  }
+
+  .github:hover,
+  .linkedin:hover,
+  .protfolio:hover {
+    transform: scale(1.1);
+
+    span {
+      opacity: 1;
+    }
+
+  }
+}
